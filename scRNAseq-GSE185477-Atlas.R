@@ -1,7 +1,3 @@
-# Putty Login: ctchpcve007.merck.com port 2022
-# go to scratch:
-cd /SFS/scratch/mashayek
-ls
 
 # R Login:
 #Scripts are modified for Rv4
@@ -10,7 +6,7 @@ module purge
 module load R/4.1.2
 R
 
-#Ed provided this source for us:
+
 source("/SFS/product/R/site_RLIBS/.Rprofile.R412.Seurat.harmony")
 
 #Required Libraries:
@@ -27,7 +23,6 @@ library(devtools)
 "%||%" <- function(a, b) if (!is.null(a)) a else b
 
 # User supplied information
-# wkdir<-"~/SALAR_Projects/iDART/mESTscRNAseq/Batch2/"
 wkdir<-"/SFS/scratch/mashayek/Liver/GSE185477_scRNA/"
 setwd(wkdir)
 
